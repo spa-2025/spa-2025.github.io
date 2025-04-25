@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025</title>
+  <meta name="description" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="IS26: Invariant Measures and Scaling Limits of Integrable Systems | SPA 2025" />
+  
+  
+  
+
+
+
+<meta name="date" content="2025-04-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="is25-quasi-stationary-distributions-and-applications.html"/>
+<link rel="next" href="is27-rough-analysis.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Book of abstracts</a></li>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html"><i class="fa fa-check"></i>Plenary Lecture or Open Public Lecture</a>
+<ul>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html#the-cutoff-phenomenon-for-markov-chains"><i class="fa fa-check"></i>The cutoff phenomenon for Markov chains</a></li>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html#on-rates-in-the-central-limit-theorem-for-a-class-of-convex-costs"><i class="fa fa-check"></i>On rates in the central limit theorem for a class of convex costs</a></li>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html#critical-long-range-percolation"><i class="fa fa-check"></i>Critical long-range percolation</a></li>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html#on-estimating-frechet-means"><i class="fa fa-check"></i>On estimating Fr'{e}Chet means</a></li>
+<li class="chapter" data-level="" data-path="plenary-lecture-or-open-public-lecture.html"><a href="plenary-lecture-or-open-public-lecture.html#what-ai-will-not-tell-you-about-white-noise"><i class="fa fa-check"></i>What AI will not tell you about white noise</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is01-statistics-for-stochastic-processes.html"><a href="is01-statistics-for-stochastic-processes.html"><i class="fa fa-check"></i>IS01: Statistics for Stochastic Processes</a></li>
+<li class="chapter" data-level="" data-path="is02-heavy-tailed-phenomena-in-networks.html"><a href="is02-heavy-tailed-phenomena-in-networks.html"><i class="fa fa-check"></i>IS02: Heavy-Tailed Phenomena in Networks</a></li>
+<li class="chapter" data-level="" data-path="is03-self-organized-criticality.html"><a href="is03-self-organized-criticality.html"><i class="fa fa-check"></i>IS03: Self-Organized Criticality</a>
+<ul>
+<li class="chapter" data-level="" data-path="is03-self-organized-criticality.html"><a href="is03-self-organized-criticality.html#the-particle-density-in-mean-field-activated-random-walk-and-the-2d-sandpile"><i class="fa fa-check"></i>The particle density in mean-field Activated Random Walk and the 2D sandpile</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is04-geometry-of-random-walks.html"><a href="is04-geometry-of-random-walks.html"><i class="fa fa-check"></i>IS04: Geometry of Random Walks</a></li>
+<li class="chapter" data-level="" data-path="is05-random-planar-geometry.html"><a href="is05-random-planar-geometry.html"><i class="fa fa-check"></i>IS05: Random Planar Geometry</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#is06-l%C3%A9vy-type-processes"><i class="fa fa-check"></i>IS06: Lévy-Type Processes</a></li>
+<li class="chapter" data-level="" data-path="is07-inhomogeneous-spatial-graph-models.html"><a href="is07-inhomogeneous-spatial-graph-models.html"><i class="fa fa-check"></i>IS07: Inhomogeneous Spatial Graph Models</a></li>
+<li class="chapter" data-level="" data-path="is08-emerging-topics-in-stochastic-finance.html"><a href="is08-emerging-topics-in-stochastic-finance.html"><i class="fa fa-check"></i>IS08: Emerging Topics in Stochastic Finance</a></li>
+<li class="chapter" data-level="" data-path="is09-random-partitions.html"><a href="is09-random-partitions.html"><i class="fa fa-check"></i>IS09: Random Partitions</a></li>
+<li class="chapter" data-level="" data-path="is10-martingales-and-their-applications-in-pdes-and-harmonic-analysis.html"><a href="is10-martingales-and-their-applications-in-pdes-and-harmonic-analysis.html"><i class="fa fa-check"></i>IS10: Martingales and Their Applications in PDEs and Harmonic Analysis</a></li>
+<li class="chapter" data-level="" data-path="is11-long-range-percolation-models.html"><a href="is11-long-range-percolation-models.html"><i class="fa fa-check"></i>IS11: Long Range Percolation Models</a></li>
+<li class="chapter" data-level="" data-path="is12-superlinear-stochastic-partial-differential-equations.html"><a href="is12-superlinear-stochastic-partial-differential-equations.html"><i class="fa fa-check"></i>IS12: Superlinear Stochastic Partial Differential Equations</a></li>
+<li class="chapter" data-level="" data-path="is13-recent-developments-in-branching-structures.html"><a href="is13-recent-developments-in-branching-structures.html"><i class="fa fa-check"></i>IS13: Recent Developments in Branching Structures</a></li>
+<li class="chapter" data-level="" data-path="is14-probabilistic-aspects-of-data-privacy.html"><a href="is14-probabilistic-aspects-of-data-privacy.html"><i class="fa fa-check"></i>IS14: Probabilistic Aspects of Data Privacy</a></li>
+<li class="chapter" data-level="" data-path="is15-extremes-of-gaussian-and-related-random-fields.html"><a href="is15-extremes-of-gaussian-and-related-random-fields.html"><i class="fa fa-check"></i>IS15: Extremes of Gaussian and Related Random Fields</a></li>
+<li class="chapter" data-level="" data-path="is16-stochastic-stability.html"><a href="is16-stochastic-stability.html"><i class="fa fa-check"></i>IS16: Stochastic Stability</a>
+<ul>
+<li class="chapter" data-level="" data-path="is16-stochastic-stability.html"><a href="is16-stochastic-stability.html#poisson-hail-on-a-wireless-ground"><i class="fa fa-check"></i>Poisson Hail on a Wireless Ground</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is17-applications-of-stochastic-analysis-to-deep-learning.html"><a href="is17-applications-of-stochastic-analysis-to-deep-learning.html"><i class="fa fa-check"></i>IS17: Applications of Stochastic Analysis to Deep Learning</a>
+<ul>
+<li class="chapter" data-level="" data-path="is17-applications-of-stochastic-analysis-to-deep-learning.html"><a href="is17-applications-of-stochastic-analysis-to-deep-learning.html#the-proportional-scaling-limit-of-neural-networks"><i class="fa fa-check"></i>The Proportional Scaling Limit of Neural Networks</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is18-sdes-analysis-approximation-inference.html"><a href="is18-sdes-analysis-approximation-inference.html"><i class="fa fa-check"></i>IS18: SDEs: Analysis, Approximation, Inference</a>
+<ul>
+<li class="chapter" data-level="" data-path="is18-sdes-analysis-approximation-inference.html"><a href="is18-sdes-analysis-approximation-inference.html#feynman-kac-formula-for-the-gradient-of-the-dirichlet-problem-and-its-applications"><i class="fa fa-check"></i>Feynman-Kac formula for the gradient of the Dirichlet problem and its applications</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#a-tail-respecting-explicit-numerical-scheme-for-l%C3%A9vy-driven-sdes-with-superlinear-drifts"><i class="fa fa-check"></i>A Tail-Respecting Explicit Numerical Scheme for Lévy-Driven SDEs With Superlinear Drifts</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is19-branching-and-interacting-particle-systems.html"><a href="is19-branching-and-interacting-particle-systems.html"><i class="fa fa-check"></i>IS19: Branching and Interacting Particle Systems</a></li>
+<li class="chapter" data-level="" data-path="is20-non-equilibrium-statistical-mechanics.html"><a href="is20-non-equilibrium-statistical-mechanics.html"><i class="fa fa-check"></i>IS20: Non-Equilibrium Statistical Mechanics</a>
+<ul>
+<li class="chapter" data-level="" data-path="is20-non-equilibrium-statistical-mechanics.html"><a href="is20-non-equilibrium-statistical-mechanics.html#collisions-of-the-supercritical-keller-segel-particle-system"><i class="fa fa-check"></i>Collisions of the supercritical Keller-Segel particle system</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is21-on-nodal-random-variables.html"><a href="is21-on-nodal-random-variables.html"><i class="fa fa-check"></i>IS21: On Nodal Random Variables</a></li>
+<li class="chapter" data-level="" data-path="is22-probabilistic-foundations-of-machine-learning.html"><a href="is22-probabilistic-foundations-of-machine-learning.html"><i class="fa fa-check"></i>IS22: Probabilistic Foundations of Machine Learning</a></li>
+<li class="chapter" data-level="" data-path="is23-inference-in-stochastic-networks.html"><a href="is23-inference-in-stochastic-networks.html"><i class="fa fa-check"></i>IS23: Inference in Stochastic Networks</a>
+<ul>
+<li class="chapter" data-level="" data-path="is23-inference-in-stochastic-networks.html"><a href="is23-inference-in-stochastic-networks.html#inference-in-dynamic-random-graphs"><i class="fa fa-check"></i>Inference in dynamic random graphs</a></li>
+<li class="chapter" data-level="" data-path="is23-inference-in-stochastic-networks.html"><a href="is23-inference-in-stochastic-networks.html#inference-in-infinite-server-queueing-networks-with-poisson-sampling"><i class="fa fa-check"></i>Inference in infinite-server queueing networks with Poisson sampling</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is24-random-media-and-limit-theorems.html"><a href="is24-random-media-and-limit-theorems.html"><i class="fa fa-check"></i>IS24: Random Media and Limit Theorems</a></li>
+<li class="chapter" data-level="" data-path="is25-quasi-stationary-distributions-and-applications.html"><a href="is25-quasi-stationary-distributions-and-applications.html"><i class="fa fa-check"></i>IS25: Quasi-Stationary Distributions and Applications</a></li>
+<li class="chapter" data-level="" data-path="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html"><a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html"><i class="fa fa-check"></i>IS26: Invariant Measures and Scaling Limits of Integrable Systems</a>
+<ul>
+<li class="chapter" data-level="" data-path="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html"><a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#simple-nonlinear-pdes-inspired-by-billiards"><i class="fa fa-check"></i>Simple nonlinear PDEs inspired by billiards</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="is27-rough-analysis.html"><a href="is27-rough-analysis.html"><i class="fa fa-check"></i>IS27: Rough Analysis</a></li>
+<li class="chapter" data-level="" data-path="is28-random-matrices-and-combinatorial-structures.html"><a href="is28-random-matrices-and-combinatorial-structures.html"><i class="fa fa-check"></i>IS28: Random Matrices and Combinatorial Structures</a></li>
+<li class="chapter" data-level="" data-path="is29-probabilistic-and-statistical-study-of-systems-of-interacting-neurons.html"><a href="is29-probabilistic-and-statistical-study-of-systems-of-interacting-neurons.html"><i class="fa fa-check"></i>IS29: Probabilistic and Statistical Study of Systems of Interacting Neurons</a></li>
+<li class="chapter" data-level="" data-path="is30-mixing-times-for-random-walks.html"><a href="is30-mixing-times-for-random-walks.html"><i class="fa fa-check"></i>IS30: Mixing Times for Random Walks</a></li>
+<li class="chapter" data-level="" data-path="is31-random-growth-and-kpz-universality.html"><a href="is31-random-growth-and-kpz-universality.html"><i class="fa fa-check"></i>IS31: Random Growth and KPZ Universality</a></li>
+<li class="chapter" data-level="" data-path="is32-stochastic-eco-evolutionary-models.html"><a href="is32-stochastic-eco-evolutionary-models.html"><i class="fa fa-check"></i>IS32: Stochastic Eco-Evolutionary Models</a>
+<ul>
+<li class="chapter" data-level="" data-path="is32-stochastic-eco-evolutionary-models.html"><a href="is32-stochastic-eco-evolutionary-models.html#convergence-of-a-general-structured-individual-based-model-with-possibly-unbounded-growth-birth-and-death-rates"><i class="fa fa-check"></i>Convergence of a general structured individual-based model with possibly unbounded growth, birth and death rates</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs01-advanced-bayesian-methods-and-statistical-innovations-in-high-dimensional-mixed-type-data-analysis-and-neuroimaging.html"><a href="cs01-advanced-bayesian-methods-and-statistical-innovations-in-high-dimensional-mixed-type-data-analysis-and-neuroimaging.html"><i class="fa fa-check"></i>CS01: Advanced Bayesian Methods and Statistical Innovations in High-Dimensional Mixed-Type Data Analysis and Neuroimaging</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs01-advanced-bayesian-methods-and-statistical-innovations-in-high-dimensional-mixed-type-data-analysis-and-neuroimaging.html"><a href="cs01-advanced-bayesian-methods-and-statistical-innovations-in-high-dimensional-mixed-type-data-analysis-and-neuroimaging.html#bayesian-sparse-kronecker-product-decomposition-for-multi-task-mixed-effects-regression-with-tensor-predictors"><i class="fa fa-check"></i>Bayesian Sparse Kronecker Product Decomposition for Multi-task Mixed-effects Regression with Tensor Predictors</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#low-rank-regularization-of-fr%C3%A9chet-regression-models-for-distribution-function-response"><i class="fa fa-check"></i>Low-rank regularization of Fréchet regression models for distribution function response</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs02-recent-progress-on-steins-method.html"><a href="cs02-recent-progress-on-steins-method.html"><i class="fa fa-check"></i>CS02: Recent Progress on Stein’s Method</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs02-recent-progress-on-steins-method.html"><a href="cs02-recent-progress-on-steins-method.html#high-dimensional-bootstrap-and-asymptotic-expansion"><i class="fa fa-check"></i>High-dimensional bootstrap and asymptotic expansion</a></li>
+<li class="chapter" data-level="" data-path="cs02-recent-progress-on-steins-method.html"><a href="cs02-recent-progress-on-steins-method.html#brownian-approximation-for-deterministic-dynamical-systems-a-steins-method-approach"><i class="fa fa-check"></i>Brownian approximation for deterministic dynamical systems: a Stein’s method approach</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs03-renormalization-in-probability-and-quantum-field-theory.html"><a href="cs03-renormalization-in-probability-and-quantum-field-theory.html"><i class="fa fa-check"></i>CS03: Renormalization in Probability and Quantum Field Theory</a></li>
+<li class="chapter" data-level="" data-path="cs04-branching-processes-as-models-for-structured-populations.html"><a href="cs04-branching-processes-as-models-for-structured-populations.html"><i class="fa fa-check"></i>CS04: Branching Processes as Models for Structured Populations</a></li>
+<li class="chapter" data-level="" data-path="cs05-recent-advances-in-interacting-brownian-particle-systems-and-their-mean-field-limits.html"><a href="cs05-recent-advances-in-interacting-brownian-particle-systems-and-their-mean-field-limits.html"><i class="fa fa-check"></i>CS05: Recent Advances in Interacting Brownian Particle Systems and Their Mean-Field Limits</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs05-recent-advances-in-interacting-brownian-particle-systems-and-their-mean-field-limits.html"><a href="cs05-recent-advances-in-interacting-brownian-particle-systems-and-their-mean-field-limits.html#convex-order-and-increasing-convex-order-for-mckean-vlasov-processes-with-common-noise"><i class="fa fa-check"></i>Convex order and increasing convex order for McKean-Vlasov processes with common noise</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs06-control-and-estimation-in-stochastic-systems.html"><a href="cs06-control-and-estimation-in-stochastic-systems.html"><i class="fa fa-check"></i>CS06: Control and Estimation in Stochastic Systems</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs06-control-and-estimation-in-stochastic-systems.html"><a href="cs06-control-and-estimation-in-stochastic-systems.html#goggins-corrected-kalman-filter-guarantees-and-filtering-regimes"><i class="fa fa-check"></i>Goggin’s corrected Kalman Filter: Guarantees and Filtering Regimes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs07-stochastic-properties-of-time-dependent-random-fields.html"><a href="cs07-stochastic-properties-of-time-dependent-random-fields.html"><i class="fa fa-check"></i>CS07: Stochastic Properties of Time-Dependent Random Fields</a></li>
+<li class="chapter" data-level="" data-path="cs08-new-frontiers-in-stochastic-quantisation.html"><a href="cs08-new-frontiers-in-stochastic-quantisation.html"><i class="fa fa-check"></i>CS08: New Frontiers in Stochastic Quantisation</a></li>
+<li class="chapter" data-level="" data-path="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html"><a href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html"><i class="fa fa-check"></i>CS09: Limit Theorems Through the Lens of Wiener Chaos and Stein-Malliavin Techniques</a></li>
+<li class="chapter" data-level="" data-path="cs10-dynamics-of-stochastic-particle-systems.html"><a href="cs10-dynamics-of-stochastic-particle-systems.html"><i class="fa fa-check"></i>CS10: Dynamics of Stochastic Particle Systems</a></li>
+<li class="chapter" data-level="" data-path="cs11-community-detection-on-random-network-models.html"><a href="cs11-community-detection-on-random-network-models.html"><i class="fa fa-check"></i>CS11: Community Detection on Random Network Models</a></li>
+<li class="chapter" data-level="" data-path="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html"><a href="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html"><i class="fa fa-check"></i>CS12: Recent Advances in Non-Markovian Processes and Random Fields</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html"><a href="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html#sample-path-properties-of-gaussian-random-fields-with-slowly-varying-increments"><i class="fa fa-check"></i>Sample path properties of Gaussian random fields with slowly varying increments</a></li>
+<li class="chapter" data-level="" data-path="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html"><a href="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html#fourier-dimension-of-the-graph-of-fractional-brownian-motion-with-h12"><i class="fa fa-check"></i>Fourier dimension of the graph of fractional Brownian motion with H&gt;1/2</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs13-complex-systems-i.html"><a href="cs13-complex-systems-i.html"><i class="fa fa-check"></i>CS13: Complex Systems I</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs13-complex-systems-i.html"><a href="cs13-complex-systems-i.html#langevin-equation-in-quenched-heterogeneous-landscapes"><i class="fa fa-check"></i>Langevin equation in quenched heterogeneous landscapes</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs14-complex-systems-ii.html"><a href="cs14-complex-systems-ii.html"><i class="fa fa-check"></i>CS14: Complex Systems II</a></li>
+<li class="chapter" data-level="" data-path="cs15-complex-systems-iii.html"><a href="cs15-complex-systems-iii.html"><i class="fa fa-check"></i>CS15: Complex Systems III</a></li>
+<li class="chapter" data-level="" data-path="cs16-recent-advances-in-financial-and-actuarial-mathematics.html"><a href="cs16-recent-advances-in-financial-and-actuarial-mathematics.html"><i class="fa fa-check"></i>CS16: Recent Advances in Financial and Actuarial Mathematics</a></li>
+<li class="chapter" data-level="" data-path="cs17-dependent-percolation-models-discrete-and-continuum.html"><a href="cs17-dependent-percolation-models-discrete-and-continuum.html"><i class="fa fa-check"></i>CS17: Dependent Percolation Models: Discrete and Continuum</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs17-dependent-percolation-models-discrete-and-continuum.html"><a href="cs17-dependent-percolation-models-discrete-and-continuum.html#percolation-in-lattice-k-neighbor-graphs"><i class="fa fa-check"></i>Percolation in lattice k-neighbor graphs</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs18-recent-advances-in-generalised-preferential-attachment-models.html"><a href="cs18-recent-advances-in-generalised-preferential-attachment-models.html"><i class="fa fa-check"></i>CS18: Recent Advances in Generalised Preferential Attachment Models</a></li>
+<li class="chapter" data-level="" data-path="cs19-reinforcement-models-elephant-random-walk.html"><a href="cs19-reinforcement-models-elephant-random-walk.html"><i class="fa fa-check"></i>CS19: Reinforcement Models: Elephant Random Walk</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs19-reinforcement-models-elephant-random-walk.html"><a href="cs19-reinforcement-models-elephant-random-walk.html#some-results-for-variations-of-the-elephant-random-walk"><i class="fa fa-check"></i>Some results for variations of the Elephant random walk</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs20-parameter-randomization-methods-for-stochastic-processes.html"><a href="cs20-parameter-randomization-methods-for-stochastic-processes.html"><i class="fa fa-check"></i>CS20: Parameter Randomization Methods for Stochastic Processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs20-parameter-randomization-methods-for-stochastic-processes.html"><a href="cs20-parameter-randomization-methods-for-stochastic-processes.html#anomalous-diffusive-processes-with-random-parameters.-theory-and-applications."><i class="fa fa-check"></i>Anomalous diffusive processes with random parameters. Theory and Applications.</a></li>
+<li class="chapter" data-level="" data-path=""><a href="#l%C3%A9vy-processes-with-values-in-the-cone-of-non-negatively-defined-matrices"><i class="fa fa-check"></i>Lévy processes with values in the cone of non-negatively defined matrices</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs21-stochastic-numerics-on-manifolds.html"><a href="cs21-stochastic-numerics-on-manifolds.html"><i class="fa fa-check"></i>CS21: Stochastic Numerics on Manifolds</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs21-stochastic-numerics-on-manifolds.html"><a href="cs21-stochastic-numerics-on-manifolds.html#kinetic-langevin-equations-on-lie-groups-with-a-geometric-mechanics-approach"><i class="fa fa-check"></i>Kinetic Langevin equations on Lie groups with a geometric mechanics approach</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs22-noncommutative-stochastic-processes.html"><a href="cs22-noncommutative-stochastic-processes.html"><i class="fa fa-check"></i>CS22: Noncommutative Stochastic Processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs22-noncommutative-stochastic-processes.html"><a href="cs22-noncommutative-stochastic-processes.html#stochastic-optimization-in-free-probability"><i class="fa fa-check"></i>Stochastic optimization in free probability</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs23-stochastic-processes-under-constraints.html"><a href="cs23-stochastic-processes-under-constraints.html"><i class="fa fa-check"></i>CS23: Stochastic Processes Under Constraints</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs23-stochastic-processes-under-constraints.html"><a href="cs23-stochastic-processes-under-constraints.html#persistence-of-strongly-correlated-stationary-gaussian-fields-from-universal-probability-decay-to-entropic-repulsion"><i class="fa fa-check"></i>Persistence of Strongly Correlated Stationary Gaussian fields: From Universal Probability Decay to Entropic Repulsion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs24-recent-advances-in-statistical-inference-for-stochastic-processes.html"><a href="cs24-recent-advances-in-statistical-inference-for-stochastic-processes.html"><i class="fa fa-check"></i>CS24: Recent Advances in Statistical Inference for Stochastic Processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs24-recent-advances-in-statistical-inference-for-stochastic-processes.html"><a href="cs24-recent-advances-in-statistical-inference-for-stochastic-processes.html#statistical-properties-of-oscillatory-processes-with-stochastic-modulation-in-amplitude-and-time"><i class="fa fa-check"></i>Statistical Properties of Oscillatory Processes with Stochastic Modulation in Amplitude and Time</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs25-volterra-gaussian-processes.html"><a href="cs25-volterra-gaussian-processes.html"><i class="fa fa-check"></i>CS25: Volterra Gaussian Processes</a></li>
+<li class="chapter" data-level="" data-path="cs26-inference-for-stochastic-equations.html"><a href="cs26-inference-for-stochastic-equations.html"><i class="fa fa-check"></i>CS26: Inference for Stochastic Equations</a></li>
+<li class="chapter" data-level="" data-path="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html"><a href="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html"><i class="fa fa-check"></i>CS27: Global and Non-Global Solutions of Semilinear Fractional Differential Equations</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html"><a href="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html#global-and-non-global-solutions-of-a-fractional-reaction-diffusion-equation-perturbed-by-a-fractional-noise"><i class="fa fa-check"></i>Global and Non-global Solutions of a Fractional Reaction-Diffusion Equation Perturbed by a Fractional Noise</a></li>
+<li class="chapter" data-level="" data-path="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html"><a href="cs27-global-and-non-global-solutions-of-semilinear-fractional-differential-equations.html#on-the-explosion-time-of-a-semilinear-stochastic-partial-differential-equations-driven-by-a-mixture-of-brownian-and-fractional-brownian-motion"><i class="fa fa-check"></i>On the explosion time of a semilinear stochastic partial differential equations driven by a mixture of Brownian and fractional Brownian motion</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs28-propagation-of-chaos-in-life-science-models.html"><a href="cs28-propagation-of-chaos-in-life-science-models.html"><i class="fa fa-check"></i>CS28: Propagation of Chaos in Life Science Models</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs28-propagation-of-chaos-in-life-science-models.html"><a href="cs28-propagation-of-chaos-in-life-science-models.html#strong-propagation-of-chaos-for-systems-of-interacting-particles-with-nearly-stable-jumps"><i class="fa fa-check"></i>Strong propagation of chaos for systems of interacting particles with nearly stable jumps</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs29-computing-the-invariant-distribution-of-linear-and-non-linear-diffusions-by-ergodic-simulation.html"><a href="cs29-computing-the-invariant-distribution-of-linear-and-non-linear-diffusions-by-ergodic-simulation.html"><i class="fa fa-check"></i>CS29: Computing the Invariant Distribution of Linear and Non-Linear Diffusions by Ergodic Simulation</a></li>
+<li class="chapter" data-level="" data-path="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html"><a href="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html"><i class="fa fa-check"></i>CS30: Gaussian Processes for Fractional Dynamics and Limiting Behaviour</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html"><a href="cs30-gaussian-processes-for-fractional-dynamics-and-limiting-behaviour.html#fractional-rough-diffusion-bessel-processes-reflection-asymptotic-behavior-and-parameter-estimation"><i class="fa fa-check"></i>Fractional rough diffusion Bessel processes: reflection, asymptotic behavior and parameter estimation</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html"><a href="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html"><i class="fa fa-check"></i>CS31: Extremes, Sojourns and Related Functionals of Gaussian Processes</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html"><a href="cs31-extremes-sojourns-and-related-functionals-of-gaussian-processes.html#on-a-weak-convergence-theorem-for-the-normalized-maximum-of-stationary-gaussian-processes-with-a-trend"><i class="fa fa-check"></i>On a Weak Convergence Theorem for the Normalized Maximum of Stationary Gaussian Processes with a Trend</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs32-advances-in-statistical-inference-for-spatial-point-processes.html"><a href="cs32-advances-in-statistical-inference-for-spatial-point-processes.html"><i class="fa fa-check"></i>CS32: Advances in Statistical Inference for Spatial Point Processes</a></li>
+<li class="chapter" data-level="" data-path="cs33-llms-and-ml-in-dynamic-risk-control.html"><a href="cs33-llms-and-ml-in-dynamic-risk-control.html"><i class="fa fa-check"></i>CS33: LLMs and ML in Dynamic Risk Control</a>
+<ul>
+<li class="chapter" data-level="" data-path="cs33-llms-and-ml-in-dynamic-risk-control.html"><a href="cs33-llms-and-ml-in-dynamic-risk-control.html#llm-driven-stock-movement-prediction"><i class="fa fa-check"></i>LLM-Driven Stock Movement Prediction</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cs34-non-local-operators-in-probability-anomalous-transport-stochastic-resettings-and-diffusions-with-memory.html"><a href="cs34-non-local-operators-in-probability-anomalous-transport-stochastic-resettings-and-diffusions-with-memory.html"><i class="fa fa-check"></i>CS34: Non-Local Operators in Probability: Anomalous Transport, Stochastic Resettings and Diffusions with Memory</a></li>
+<li class="chapter" data-level="" data-path="cs35-edge-and-spectrum-of-heterogeneous-ensembles.html"><a href="cs35-edge-and-spectrum-of-heterogeneous-ensembles.html"><i class="fa fa-check"></i>CS35: Edge and Spectrum of Heterogeneous Ensembles</a></li>
+<li class="chapter" data-level="" data-path="cs36-probabilistic-graphical-models.html"><a href="cs36-probabilistic-graphical-models.html"><i class="fa fa-check"></i>CS36: Probabilistic Graphical Models</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SPA 2025</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="is26-invariant-measures-and-scaling-limits-of-integrable-systems" class="section level1 unnumbered hasAnchor">
+<h1>IS26: Invariant Measures and Scaling Limits of Integrable Systems<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#is26-invariant-measures-and-scaling-limits-of-integrable-systems" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Davide Gabrielli (University of L’Aquila)</p>
+<div id="simple-nonlinear-pdes-inspired-by-billiards" class="section level2 unnumbered hasAnchor">
+<h2>Simple nonlinear PDEs inspired by billiards<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#simple-nonlinear-pdes-inspired-by-billiards" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="krzysztof-burdzy-1" class="section level4 unnumbered hasAnchor">
+<h4>Krzysztof Burdzy<a href="is26-invariant-measures-and-scaling-limits-of-integrable-systems.html#krzysztof-burdzy-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>“Pinned billiard balls” do not move but have pseudo-velocities. Pairs of
+balls are chosen one by one, in either a deterministic or random way.
+When a pair is chosen, it “collides” in the sense that the
+pseudo-velocities change according to the usual laws of totally elastic
+collisions. In other words, the total energy and total momentum are
+conserved.</p>
+<p>A one-dimensional pinned billiard balls model with local energy
+redistribution was considered in <span class="math inline">\([1]\)</span>. The results suggest that the
+model has a hydrodynamic limit and the parameters for the limit, the
+local variance <span class="math inline">\(\sigma\)</span> and mean <span class="math inline">\(\mu\)</span>, satisfy the coupled partial
+differential equations with freezing <span class="math display">\[\begin{aligned}
+\sigma_t(x,t) &amp; = - \mu_x(x,t) {\bf 1}_{ \sigma(x,t) &gt;0},\\
+\mu_t(x,t) &amp;=
+- \sigma_x(x,t) {\bf 1}_{ \sigma(x,t) &gt;0},\\
+\sigma(x,t) &amp; \geq 0.
+\end{aligned}\]</span> If the initial conditions are continuous then there
+exist continuous solutions for all time. This and many quantitative and
+qualitative results were obtained in <span class="math inline">\([2]\)</span>.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Krzysztof Burdzy, Jeremy G. Hoskins and Stefan Steinerberger
+(2024) <em>From pinned billiard balls to partial differential equations</em>,
+<a href="https://arxiv.org/abs/2209.01503">Math Arxiv 2209.01503</a></p>
+<p><span class="math inline">\([2]\)</span> Krzysztof Burdzy and John Sylvester (2024) <em>Coupled transport
+equations with freezing</em>, <a href="https://arxiv.org/abs/2406.02707">Math Arxiv
+2406.02707</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="is25-quasi-stationary-distributions-and-applications.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="is27-rough-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
