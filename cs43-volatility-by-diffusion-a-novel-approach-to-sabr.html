@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CS08: New Frontiers in Stochastic Quantisation | SPA 2025</title>
-  <meta name="description" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <title>CS43: Volatility by Diffusion: A Novel Approach to SABR | SPA 2025</title>
+  <meta name="description" content="CS43: Volatility by Diffusion: A Novel Approach to SABR | SPA 2025" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta property="og:title" content="CS43: Volatility by Diffusion: A Novel Approach to SABR | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta name="twitter:title" content="CS43: Volatility by Diffusion: A Novel Approach to SABR | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="cs07-stochastic-properties-of-time-dependent-random-fields.html"/>
-<link rel="next" href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html"/>
+<link rel="prev" href="cs42-recent-advances-in-random-walks-and-random-polymers-in-random-environments.html"/>
+<link rel="next" href="cs44-stable-type-processes.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -457,18 +457,101 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="cs08-new-frontiers-in-stochastic-quantisation" class="section level1 unnumbered hasAnchor">
-<h1>CS08: New Frontiers in Stochastic Quantisation<a href="cs08-new-frontiers-in-stochastic-quantisation.html#cs08-new-frontiers-in-stochastic-quantisation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Organizer: Tommaso Rosati (University of Warwick)</p>
+<div id="cs43-volatility-by-diffusion-a-novel-approach-to-sabr" class="section level1 unnumbered hasAnchor">
+<h1>CS43: Volatility by Diffusion: A Novel Approach to SABR<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#cs43-volatility-by-diffusion-a-novel-approach-to-sabr" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Michał Barski (University of Warsaw)</p>
+<div id="characterization-of-the-probability-distribution-in-the-sabr-model" class="section level2 unnumbered hasAnchor">
+<h2>Characterization of the Probability Distribution in the SABR Model<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#characterization-of-the-probability-distribution-in-the-sabr-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="maciej-wiśniewolski" class="section level4 unnumbered hasAnchor">
+<h4>Maciej Wiśniewolski<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#maciej-wiśniewolski" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In their famous paper, Hagan and co-authors introduced a stochastic
+volatility model called the SABR model, the name being an acronym
+derived from the model’s parameters: Stochastic Alpha, Beta, Rho. The
+model describes the price dynamics of a financial asset by allowing its
+volatility to be stochastic. This is implemented through a system of two
+stochastic differential equations (SDEs) with appropriate initial
+conditions.</p>
+<p>Although the formulation of the model is relatively simple, the problem
+of providing a rigorous mathematical description of the solution to the
+associated SDEs has turned out to be surprisingly difficult and remains
+unsolved to this day.</p>
+<p>In our talk, we present a new approach to characterizing the probability
+distribution in the SABR model. To achieve this, we perform an
+unconventional change of probability measure — unconventional in the
+sense of parameter dependence — which allows us to reduce the original
+problem of describing the solution to the initial SDEs to analyzing the
+probability distribution of a certain one-dimensional diffusion process
+that may explode.</p>
+<p>Using the approach developed by Karatzas and Ruf <span class="math display">\[2\]</span> for explosive
+diffusions, we are able to compute the power transform of the price
+process in the SABR model. Remarkably, we are also able to deconstruct
+the parameter dependencies and invert the transform, obtaining the
+probability distribution of the SABR model as an explicitly given
+functional of a Brownian motion.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Hagan, P. S., Kumar, D., Lesniewski, A., Woodward, D. <em>Managing
+Smile Risk</em>. Wilmott Magazine, 2002.</p>
+<p><span class="math inline">\([2]\)</span> Karazas, I., Ruf, J.: <em>Distribution of the time to explosion for
+one-dimensional diffusions</em>, (2016), Probability Theory and Related
+Fields, 164, 1027-1069.</p>
+</div>
+</div>
+<div id="measuring-volatility-deterministic-and-stochastic-perspectives-regularization-by-noise" class="section level2 unnumbered hasAnchor">
+<h2>Measuring volatility: deterministic and stochastic perspectives (regularization by noise)<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#measuring-volatility-deterministic-and-stochastic-perspectives-regularization-by-noise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="rafał-łochowski" class="section level4 unnumbered hasAnchor">
+<h4>Rafał Łochowski<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#rafał-łochowski" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In the talk I will review several results on convergence of functions of
+sums of increments of stochastic processes or deterministic paths to
+limiting objects, which are known under the names like: volatility,
+integrated volatility, quadratic variation, <span class="math inline">\(p\)</span>-variation,
+<span class="math inline">\(\psi\)</span>-variation etc. The emphasis will be on the sampling method used
+and the dependence of the existence and value of the limit on the
+sampling metod (partition scheme) chosen.</p>
+<p>For example, while for semimartingales the sampling method may be almost
+arbitrary, (though the mode of convergence may depend on the method
+chosen), for deterministic functions it is not the case. I will also
+present some open questions related to the variations of fractional
+Brownian motions and the horizontal component of the Peano curve.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> P. Das, R. Łochowski, T. Matsuda and N. Perkowski "Level
+crossings of fractional Brownian motion." <em>Ann. Probab.</em>, to appear.</p>
+<p><span class="math inline">\([2]\)</span> P. L. Zondi, D. Hove, R. Łochowski and F. J. Mhlanga "Quadratic
+variation and local times of the horizontal component of the Peano curve
+(square filling curve)." <em>preprint</em>, arXiv:2501.07966. .</p>
+</div>
+</div>
+<div id="characterization-of-moments-in-the-sabr-model" class="section level2 unnumbered hasAnchor">
+<h2>Characterization of moments in the SABR model<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#characterization-of-moments-in-the-sabr-model" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="michał-barski" class="section level4 unnumbered hasAnchor">
+<h4>Michał Barski<a href="cs43-volatility-by-diffusion-a-novel-approach-to-sabr.html#michał-barski" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In this talk, I will present a new approach to computing moments in the
+SABR model by reducing the original system of stochastic differential
+equations to a one-dimensional diffusion process with possible
+explosion. The central idea is to introduce an auxiliary process θ,
+whose negative moments are directly related to the moments of the asset
+price in the SABR framework.</p>
+<p>Using the specific polynomial structure of the coefficients in the SDE
+for θ, we derive a recursive formula for the integer moments of the
+asset price. This recurrence takes the form of a system of ordinary
+differential equations depending on the model parameters and can be
+solved explicitly in special parameter regimes, such as when <span class="math inline">\(\beta=0\)</span>
+or <span class="math inline">\(\rho=0\)</span>. In the general case, the initial term of the recursion is
+characterized by its Laplace transform expressed as a power series.</p>
+<p>This method provides new analytical tools for studying the moment
+structure of the SABR model and, in many cases, leads to a unique
+identification of the distribution of the underlying asset price.</p>
+<p>The talk is based on a joint work with M. Wiśniewolski and B. Polaczyk.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="cs07-stochastic-properties-of-time-dependent-random-fields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs42-recent-advances-in-random-walks-and-random-polymers-in-random-environments.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs44-stable-type-processes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

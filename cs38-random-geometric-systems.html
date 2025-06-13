@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CS08: New Frontiers in Stochastic Quantisation | SPA 2025</title>
-  <meta name="description" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <title>CS38: Random Geometric Systems | SPA 2025</title>
+  <meta name="description" content="CS38: Random Geometric Systems | SPA 2025" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta property="og:title" content="CS38: Random Geometric Systems | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta name="twitter:title" content="CS38: Random Geometric Systems | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="cs07-stochastic-properties-of-time-dependent-random-fields.html"/>
-<link rel="next" href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html"/>
+<link rel="prev" href="cs37-recent-progresses-on-mckean-vlasov-equations-and-mean-field-interacting-particle-systems.html"/>
+<link rel="next" href="cs39-recent-advances-in-stochastic-differential-equations.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -457,18 +457,85 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="cs08-new-frontiers-in-stochastic-quantisation" class="section level1 unnumbered hasAnchor">
-<h1>CS08: New Frontiers in Stochastic Quantisation<a href="cs08-new-frontiers-in-stochastic-quantisation.html#cs08-new-frontiers-in-stochastic-quantisation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Organizer: Tommaso Rosati (University of Warwick)</p>
+<div id="cs38-random-geometric-systems" class="section level1 unnumbered hasAnchor">
+<h1>CS38: Random Geometric Systems<a href="cs38-random-geometric-systems.html#cs38-random-geometric-systems" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Moritz Otto (Leiden University)</p>
+<div id="ordering-and-convergence-of-large-degrees-in-random-hyperbolic-graphs" class="section level2 unnumbered hasAnchor">
+<h2>Ordering and convergence of large degrees in random hyperbolic graphs<a href="cs38-random-geometric-systems.html#ordering-and-convergence-of-large-degrees-in-random-hyperbolic-graphs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="loïc-gassmann" class="section level4 unnumbered hasAnchor">
+<h4>Loïc Gassmann<a href="cs38-random-geometric-systems.html#loïc-gassmann" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A random hyperbolic graph is constructed by sampling <span class="math inline">\(n\)</span> points in a
+hyperbolic disc and connecting pairs of points that are within a
+distance smaller than a certain threshold <span class="math inline">\(R_n\)</span>. When the curvature
+parameter <span class="math inline">\(\alpha\)</span> is larger than <span class="math inline">\(1/2\)</span> the graph is known to be a valid
+model for the so-called <em>complex networks</em>, which represent a broad
+class of real-world systems <span class="math display">\[1\]</span>. A <em>complex networks</em> is typically
+structured as follows: high-degree nodes are well connected to each
+other and serve as hubs for nodes with slightly lower degrees. These
+intermediate-degree nodes, in turn, connect to nodes with even lower
+degrees, and so on, forming a hierarchical structure.</p>
+<p>The specificity of the random hyperbolic graph, compared to other
+<em>complex networks</em> models, is its embedding in a geometric space. The
+closer a node is to the centre of the underlying hyperbolic disc, the
+more important it tends to be in the network hierarchy. In this talk, we
+investigate this property precisely by comparing the ranking of the
+nodes by increasing distance to the centre with the ranking of the nodes
+by decreasing degree. We show that in the scale-free regime
+(<span class="math inline">\(\alpha &gt; 1/2\)</span>), the rank at which these two rankings cease to coincide
+is <span class="math inline">\(n^{1/(1+8\alpha)+o(1)}\)</span>, with high probability <span class="math display">\[2\]</span>. This rank
+marks the point beyond which spatial position no longer accurately
+reflects the importance of the nodes.</p>
+<p>We also give a precise description of the largest degrees of the graph
+by stating the convergence in distribution of the point process of the
+degrees toward an explicit Poisson point process, for all positive
+values of the curvature parameter <span class="math inline">\(\alpha\)</span>. The transition
+at <span class="math inline">\(\alpha = 1/2\)</span> is characterised by a maximum degree having a
+distribution out of the class of extreme value distributions <span class="math display">\[2\]</span>.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Réka Albert and Albert-László Barabási, Statistical mechanics of
+complex networks, Rev. Modern Phys. 74 (2002), no. 1, 47-97</p>
+<p><span class="math inline">\([2]\)</span> Loïc Gassmann, Ordering and convergence of large degrees in random
+hyperbolic graphs, 2025, preprint, arXiv:2404.06383</p>
+</div>
+</div>
+<div id="large-deviation-analysis-for-canonical-gibbs-measures" class="section level2 unnumbered hasAnchor">
+<h2>Large-Deviation Analysis for Canonical Gibbs Measures<a href="cs38-random-geometric-systems.html#large-deviation-analysis-for-canonical-gibbs-measures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="martina-petráková" class="section level4 unnumbered hasAnchor">
+<h4>Martina Petráková<a href="cs38-random-geometric-systems.html#martina-petráková" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Gibbs processes in the continuum are one of the most fundamental models
+in spatial stochastics. They are typically defined using a density with
+respect to the Poisson point process. In the language of statistical
+mechanics, this corresponds to the grand-canonical ensemble, where the
+number of particles is random. Of the same importance is the canonical
+ensemble, where the number of particles is fixed. In the language of
+point processes, this corresponds to studying binomial Gibbs processes
+which are defined using a density with respect to the binomial point
+process.</p>
+<p>In this talk, we present a large deviation theory developed for
+functionals of binomial Gibbs processes with fixed intensity in
+increasing windows. Our method relies on the traditional large deviation
+result from <span class="math inline">\([1]\)</span> noting that the binomial point process is obtained
+from the Poisson point process by conditioning on the point number. Our
+main methodological contribution is the development of coupling
+constructions that allow us to handle delicate and unlikely pathological
+events. The presented results cover a broad class of both the
+interaction function (possibly unbounded) and the functionals (given as
+a sum of possibly unbounded local score functions).</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Georgii, H.-O. and Zessin, H. (1993): Large deviations and the
+maximum entropy principle for marked point random fields, Probab. Theory
+Related Fields 96, 177–204.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="cs07-stochastic-properties-of-time-dependent-random-fields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs37-recent-progresses-on-mckean-vlasov-equations-and-mean-field-interacting-particle-systems.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs39-recent-advances-in-stochastic-differential-equations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

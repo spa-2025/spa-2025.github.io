@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CS08: New Frontiers in Stochastic Quantisation | SPA 2025</title>
-  <meta name="description" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <title>CS11: Spectrally negative Lévy models with level-dependent features | SPA 2025</title>
+  <meta name="description" content="CS11: Spectrally negative Lévy models with level-dependent features | SPA 2025" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta property="og:title" content="CS11: Spectrally negative Lévy models with level-dependent features | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CS08: New Frontiers in Stochastic Quantisation | SPA 2025" />
+  <meta name="twitter:title" content="CS11: Spectrally negative Lévy models with level-dependent features | SPA 2025" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="cs07-stochastic-properties-of-time-dependent-random-fields.html"/>
-<link rel="next" href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html"/>
+<link rel="prev" href="cs10-dynamics-of-stochastic-particle-systems.html"/>
+<link rel="next" href="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -457,18 +457,124 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="cs08-new-frontiers-in-stochastic-quantisation" class="section level1 unnumbered hasAnchor">
-<h1>CS08: New Frontiers in Stochastic Quantisation<a href="cs08-new-frontiers-in-stochastic-quantisation.html#cs08-new-frontiers-in-stochastic-quantisation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Organizer: Tommaso Rosati (University of Warwick)</p>
+<div id="cs11-spectrally-negative-lévy-models-with-level-dependent-features" class="section level1 unnumbered hasAnchor">
+<h1>CS11: Spectrally negative Lévy models with level-dependent features<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#cs11-spectrally-negative-lévy-models-with-level-dependent-features" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Organizer: Jean-François Renaud (UQAM)</p>
+<div id="optimality-of-a-barrier-strategy-in-a-spectrally-negative-lévy-model-with-a-level-dependent-intensity-of-bankruptcy" class="section level2 unnumbered hasAnchor">
+<h2>Optimality of a barrier strategy in a spectrally negative Lévy model with a level-dependent intensity of bankruptcy<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#optimality-of-a-barrier-strategy-in-a-spectrally-negative-lévy-model-with-a-level-dependent-intensity-of-bankruptcy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="jean-francois-renaud" class="section level4 unnumbered hasAnchor">
+<h4>Jean-Francois Renaud<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#jean-francois-renaud" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The stochastic control problem concerned with the maximization of
+dividend payments in a model based on a spectrally negative Lévy process
+(SNLP) has attracted a lot of research interest since the papers of
+Avram, Palmowski &amp; Pistorius (2007) and Loeffen (2008). In that problem,
+a dividend strategy is said to be optimal if it maximises the expected
+present value of dividend payments made up to the time of ruin, which is
+a standard first-passage time below zero. In this talk, I will consider
+a version of this stochastic control problem in which the (controlled)
+process is allowed to spend time under zero, but is then subject to a
+level-dependent intensity of bankruptcy. In a joint paper with Dante
+Mata (UQAM &amp; CRM), we were able to prove that there exists a barrier
+strategy that is optimal for this control problem, under a mild
+assumption on the Lévy measure.</p>
+</div>
+</div>
+<div id="lévy-processes-under-level-dependent-poissonian-switching" class="section level2 unnumbered hasAnchor">
+<h2>Lévy processes under level-dependent Poissonian switching<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#lévy-processes-under-level-dependent-poissonian-switching" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="noah-daniel-beelders" class="section level4 unnumbered hasAnchor">
+<h4>Noah Daniel Beelders<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#noah-daniel-beelders" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The applicability of spectrally negative Lévy processes (i.e. Lévy
+processes with only downward jumps) in ruin theory dates back to the
+classical Cramér-Lundberg model which utilised a compound Poisson
+process with positive drift as a model of the underlying surplus
+process. Since then, research in this field has grown rapidly and the
+literature on such models has continually expanded (see <span class="math inline">\([1]\)</span> for an
+extensive monograph on ruin theory and related concepts).</p>
+<p><span class="math inline">\(\;\;\)</span> Further extensions of these models have received a lot of
+attention in recent years. For instance, the refracted Lévy process,
+first introduced in <span class="math inline">\([5]\)</span>, extends the classical Lévy risk model by
+allowing for a reduction in its drift immediately once it moves above
+some threshold <span class="math inline">\(b\)</span>. This may hence be used to model the dividend
+payments of an insurer once their surplus is greater than some threshold
+<span class="math inline">\(b\)</span> (see also <span class="math inline">\([4, 7, 9]\)</span> for further contributions relating to
+refracted Lévy processes). The work of <span class="math inline">\([8]\)</span> further generalised the
+refracted Lévy process by allowing it to immediately change dynamics
+between two independent spectrally negative Lévy processes (SNLPs)
+<span class="math inline">\(X := \{X_t\}_{t \geq 0}\)</span> and <span class="math inline">\(Y:= \{Y_t\}_{t \geq 0}\)</span> when it moves
+below or above a threshold <span class="math inline">\(b\)</span>, respectively, provided that there is no
+Gaussian component in the unbounded variation case.</p>
+<p><span class="math inline">\(\;\;\)</span> For this presentation (based on <span class="math inline">\([2]\)</span>), a further extension of
+the aforementioned models is considered in which the switch between <span class="math inline">\(X\)</span>
+and <span class="math inline">\(Y\)</span> does not occur immediately when <span class="math inline">\(b\)</span> is crossed, but instead when
+it is above (below) <span class="math inline">\(b\)</span> and coincides with an arrival epoch of an
+independent Poisson process. Under this extension, the corresponding
+process <span class="math inline">\(U := \{U_t\}_{t \geq 0}\)</span> is a solution to the SDE with
+level-dependent switching <span class="math display">\[\tag{1}
+        U_t = U_0 + \int^t_0 \mathbf{1}_{\{U_{T_{N(s)}} \leq b\}} \mathrm{d} X_s +\int^t_0 \mathbf{1}_{\{U_{T_{N(s)}} &gt; b\}}  \mathrm{d} Y_s ,\]</span>
+where <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are defined as above, and are independent of the
+Poisson process <span class="math inline">\(N\)</span> with arrival times <span class="math inline">\(T_0 = 0\)</span> and
+<span class="math inline">\(\{T_i\}_{i\geq 1}\)</span>.</p>
+<p><span class="math inline">\(\;\;\)</span> Utilising the Poisson arrival epochs, we show that a pathwise
+solution exists to Eq. <span class="math inline">\((1)\)</span> even in the unbounded variation case with a
+Gaussian component. It will then be shown that a set of identities for
+the two sided exit problems and the potential measures (killed and
+non-killed) of <span class="math inline">\(U\)</span> can be established in terms of generalisations of the
+classical scale functions from Chapter 8 of <span class="math inline">\([6]\)</span> (see also Chapter
+VII.2 in <span class="math inline">\([3]\)</span>). Then, to illustrate the applicability of these results,
+the probability of ruin is derived for a risk process with delays in the
+dividend payments.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> S. Asmussen and H. Albrecher. , volume 14 of <em>Advanced Series on
+Statistical Science &amp; Applied Probability</em>. World Scientific Publishing
+Co. Pte. Ltd., Hackensack, NJ, second edition, 2010.</p>
+<p><span class="math inline">\([2]\)</span> N. Beelders, L. Ramsden, and A. D. Papaioannou. Lévy processes
+under level-dependent poissonian switching. Avaliable at
+arXiv:2505.00453, 2025.</p>
+<p><span class="math inline">\([3]\)</span> J. Bertoin. , volume 121 of <em>Cambridge Tracts in Mathematics</em>.
+Cambridge University Press, Cambridge, 1996.</p>
+<p><span class="math inline">\([4]\)</span> I. Czarna, J.-L. Pérez, T. Rolski, and K. Yamazaki. Fluctuation
+theory for level-dependent Lévy risk processes. , 129(12):5406–5449,
+2019.</p>
+<p><span class="math inline">\([5]\)</span> A. E. Kyprianou and R. L. Loeffen. Refracted Lévy processes. ,
+46(1):24–44, 2010.</p>
+<p><span class="math inline">\([6]\)</span> A. E. Kyprianou. . Universitext. Springer, Heidelberg, second
+edition, 2014.</p>
+<p><span class="math inline">\([7]\)</span> A. E. Kyprianou, J. C. Pardo, and J. L. Pérez. Occupation times of
+refracted Lévy processes. , 27(4):1292–1315, 2014.</p>
+<p><span class="math inline">\([8]\)</span> K. Noba and K. Yano. Generalized refracted Lévy process and its
+application to exit problem. , 129(5):1697–1725, 2019.</p>
+<p><span class="math inline">\([9]\)</span> J.-F. c. Renaud. On the time spent in the red by a refracted Lévy
+risk process. , 51(4):1171–1188, 2014.</p>
+</div>
+</div>
+<div id="fluctuations-of-omega-killed-level-dependent-spectrally-negative-levy-processes" class="section level2 unnumbered hasAnchor">
+<h2>Fluctuations of Omega-Killed Level-Dependent Spectrally Negative Levy Processes<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#fluctuations-of-omega-killed-level-dependent-spectrally-negative-levy-processes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="meral-şimşek" class="section level4 unnumbered hasAnchor">
+<h4>Meral Şimşek<a href="cs11-spectrally-negative-lévy-models-with-level-dependent-features.html#meral-şimşek" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A reflected level-dependent Lévy process solves the stochastic
+differential equation (SDE) <span class="math display">\[\tag{1}
+\mathrm{d} V(t)  = \mathrm{d} X(t)+ \mathrm{d} R_t - \phi(V(t))\mathrm{d}t, \quad t \geq 0,\]</span>
+where <span class="math inline">\(X(t)\)</span> is a spectrally negative Lévy process and <span class="math inline">\(R(t)\)</span> is a
+non-decreasing and right continuous process that pushes upward the
+process given in <span class="math inline">\((1)\)</span>, when it attempts to go below <span class="math inline">\(0\)</span>. In this study,
+we solve exit problems and potential measure for a omega-killed
+reflected level-dependent Lévy process which is exponentially killed
+with a killing intensity <span class="math inline">\(\omega(\cdot)\)</span>, that depends on the present
+state of the process. All identities are given in terms of new
+generalizations of scale functions, which are solution to Volterra
+equations. We also discuss the existence of solution of the SDE given in
+<span class="math inline">\((1)\)</span>.</p>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="cs07-stochastic-properties-of-time-dependent-random-fields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cs09-limit-theorems-through-the-lens-of-wiener-chaos-and-stein-malliavin-techniques.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs10-dynamics-of-stochastic-particle-systems.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs12-recent-advances-in-non-markovian-processes-and-random-fields.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
