@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>SPA 2025</title>
-  <meta name="description" content="SPA 2025" />
+  <title>CS22: Noncommutative Stochastic Processes | SPA 2025</title>
+  <meta name="description" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="SPA 2025" />
+  <meta property="og:title" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="SPA 2025" />
+  <meta name="twitter:title" content="CS22: Noncommutative Stochastic Processes | SPA 2025" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="practical-information.html"/>
+<link rel="prev" href="cs21-stochastic-numerics-on-manifolds-1.html"/>
+<link rel="next" href="cs33-llms-and-ml-in-dynamic-risk-control..html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -728,122 +728,114 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">SPA 2025</h1>
+<div id="cs22-noncommutative-stochastic-processes-1" class="section level2 unnumbered hasAnchor">
+<h2>CS22: Noncommutative Stochastic Processes<a href="cs22-noncommutative-stochastic-processes-1.html#cs22-noncommutative-stochastic-processes-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>date: 7/15/2025, time: 16:00-17:30, room: ICS 139</p>
+<p>Organizer: Anna Wysoczańska-Kula (Uniwersytet Wrocławski)</p>
+<div id="stochastic-optimization-in-free-probability" class="section level3 unnumbered hasAnchor">
+<h3>Stochastic optimization in free probability<a href="cs22-noncommutative-stochastic-processes-1.html#stochastic-optimization-in-free-probability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="david-jekel-university-of-copenhagen" class="section level4 unnumbered hasAnchor">
+<h4>David Jekel (University of Copenhagen)<a href="cs22-noncommutative-stochastic-processes-1.html#david-jekel-university-of-copenhagen" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This is based on joint work with Wilfrid Gangbo, Kyeongsik Nam, and
+Aaron Palmer <span class="math inline">\([1]\)</span>, in which we develop an analog of optimal control
+theory in the free probability setting, motivated in part by connections
+with mean field games.</p>
+<p><strong>Free probability:</strong> Free probability, developed in large part by
+Voiculescu, is a theory of non-commuting random variables which can be
+used the describe the large-<span class="math inline">\(n\)</span> behavior of certain <span class="math inline">\(n \times n\)</span> random
+matrices. The idea is that the algebra of classical random variables
+<span class="math inline">\(L^\infty(\Omega,P)\)</span> is replaced by a non-commutative von Neumann
+algebra and the expectation is replaced by a tracial state
+<span class="math inline">\(\tau: M \to \mathbb{C}\)</span>. The role of the normal distribution from
+classical probability is played by Wigner’s semicircular distribution,
+and classical independence is replaced by <em>free independence</em>, a
+condition motivated by free products of groups. In particular, a
+<span class="math inline">\(d\)</span>-variable free Brownian motion is a process
+<span class="math inline">\(S_t = (S_t^{(1)},\dots,S_t^{(d)})\)</span> where the increments are freely
+independent and the different coordinates are also freely independent. A
+free Brownian motion describes the large-<span class="math inline">\(n\)</span> behavior of a Brownian
+motion on the space <span class="math inline">\(M_n(\mathbb{C})_{\operatorname{sa}}^d\)</span> of
+<span class="math inline">\(d\)</span>-tuples of self-adjoint matrices.</p>
+<p><strong>Stochastic optimization problems:</strong> We consider stochastic
+optimization problems that using both a free Brownian motion <span class="math inline">\(S_t\)</span> and a
+classical Brownian <span class="math inline">\(W_t\)</span>; these processes are thus classical random
+objects taking values in a tracial von Neumann algebra, equipped with
+both classical and non-commutative filtrations. We consider processes
+satisfying <span class="math display">\[dX_t = \beta_F dS_t + \beta_C \,dW_t + \alpha_t\,dt,\]</span>
+where <span class="math inline">\(\alpha_t\)</span> is a control that we want to choose. The stochastic
+optimization problem is
+<span class="math display">\[\text{minimize } \mathbb{E} [\int_0^1 L(X_t,\alpha_t)\,dt + g(X_1)] \text{ over } \alpha,\]</span>
+where the running cost <span class="math inline">\(L\)</span> and the terminal cost <span class="math inline">\(g\)</span> are given functions
+that can be evaluated on non-commuting random variables. The inclusion
+of both <span class="math inline">\(S_t\)</span> and <span class="math inline">\(W_t\)</span> is motivated by mean field game theory (see
+<span class="math inline">\([2]\)</span>): The <span class="math inline">\(S_t\)</span> represents individual noise associated to a single
+player (motivated by the Brownian motion that affects all the matrix
+entries), and the <span class="math inline">\(W_t\)</span> represents a common noise that affects all the
+players (which in the matrix model would be a random scalar multiple of
+the identity matrix added to each of the <span class="math inline">\(d\)</span> matrices).</p>
+<p><strong>Results:</strong> We study the value of the minimization problem as a
+function of the initial condition <span class="math inline">\(X_0\)</span>, and show that it satisfies a
+non-commutative version of the dynamic programming principle and
+Hamilton–Jacobi equation. A key challenge is that the value of the
+optimization problem may depend on the choice of ambient von Neumann
+algebra <span class="math inline">\(M\)</span> and filtration. We thus take the infimum over all choices of
+<span class="math inline">\(M\)</span> as well, and analyze how to join together different given choices of
+<span class="math inline">\(M\)</span>. However, under certain convexity assumptions, the answer is the
+same regardless of the choice of <span class="math inline">\(M\)</span>, and in this case we can show that
+the value of the free stochastic optimal problem gives the large-<span class="math inline">\(n\)</span>
+limit of matrix optimal control problems. We remark that special cases
+of this setup relate closely with free entropy theory and the large
+deviation principle of Biane, Capitaine, and Guionnet <span class="math inline">\([3]\)</span>.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> Wilfrid Gangbo, David Jekel, Kyeongsik Nam, and Aaron Z. Palmer.
+Viscosity solutions in non-commutative variables. Preprint, 2025,
+arXiv:2502.17329</p>
+<p><span class="math inline">\([2]\)</span> René Carmona, François Delarue, et al. <em>Probabilistic theory of
+mean field games with applications I.</em> Springer, 2018.</p>
+<p><span class="math inline">\([3]\)</span> Philippe Biane, Mireille Capitaine, and Alice Guionnet. Large
+deviation bounds for matrix Brownian motion. <em>Inventiones mathematicae</em>,
+152, 2003, pp. 433–459.</p>
 </div>
-<div id="th-conference-on-stochastic-processes-and-their-applications-14-18-july-2025" class="section level1 unnumbered hasAnchor">
-<h1>44th Conference on Stochastic Processes and their Applications 14-18 July 2025<a href="index.html#th-conference-on-stochastic-processes-and-their-applications-14-18-july-2025" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="Logo%20SPA_Easy-Resize_com_crop.jpg" width="60%" style="display: block; margin: auto;" /></p>
-<div id="organizers" class="section level3 unnumbered hasAnchor">
-<h3>Organizers<a href="index.html#organizers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 2em; margin-bottom: 1em;">
-<div style="flex: 1; text-align: center; padding: 1em;">
-<img src="pwr.png" alt="WUST logo" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Rector of Wrocław University of Science and Technology, Arkadiusz Wójs, is the patron of the conference.
-</p>
 </div>
-<div style="flex: 1; text-align: center; padding: 1em;">
-<img src="uwr.png" alt="UWr logo" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Rector of the University of Wrocław, Robert Olkiewicz, is the patron of the conference.
-</p>
-</div>
-</div>
-</div>
-<div id="partners" class="section level3 unnumbered hasAnchor">
-<h3>Partners<a href="index.html#partners" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<img src="bernoulli_logo.png" alt="Bernoulli Society" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Bernoulli Society for Mathematical Statistics and Probability
-</p>
-</div>
-</div>
-<div id="patronage" class="section level3 unnumbered hasAnchor">
-<h3>Patronage<a href="index.html#patronage" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<img src="Patronat_Prezydent%20WRO.png" alt="Wrocław logo" style="max-height: 80px;"><br>
-<p style="font-size: 0.9em; margin-top: 0.5em;">
-Honorary Patronage of the Mayor of Wrocław
-</p>
-<p><br><br></p>
-<img src="01_znak_siatka_podstawowy_kolor_biale_tlo(1).png" alt="Ministry logo" style="max-height: 80px;"><br>
-<p style="font-size: 0.9em; margin-top: 0.5em;">
-Minister of Science and Higher Education, Republic of Poland
-</p>
+<div id="affine-fixed-point-equations-in-free-probability" class="section level3 unnumbered hasAnchor">
+<h3>Affine fixed-point equations in free probability<a href="cs22-noncommutative-stochastic-processes-1.html#affine-fixed-point-equations-in-free-probability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="bartosz-kołodziejek-warsaw-university-of-technology" class="section level4 unnumbered hasAnchor">
+<h4>Bartosz Kołodziejek (Warsaw University of Technology)<a href="cs22-noncommutative-stochastic-processes-1.html#bartosz-kołodziejek-warsaw-university-of-technology" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We study the free analogue of the classical affine fixed-point (or
+perpetuity) equation
+<span class="math display">\[\mathbb{X} \stackrel{d}{=} \mathbb{A}\mathbb{X}\mathbb{A} + \mathbb{B},\]</span>
+where <span class="math inline">\(\mathbb{X}\)</span> is assumed to be <span class="math inline">\(*\)</span>-free from the pair
+<span class="math inline">\((\mathbb{A},\mathbb{B})\)</span>, with <span class="math inline">\(\mathbb{A}\ge 0\)</span> and
+<span class="math inline">\(\mathbb{B}=\mathbb{B}^*\)</span>. We establish existence of a solution under
+the condition <span class="math inline">\(\tau(\mathbb{A}^2)\leq 1\)</span> for bounded <span class="math inline">\(\mathbb{B}\)</span>. In
+the critical case <span class="math inline">\(\tau(\mathbb{A}^2)=1\)</span>, the solution <span class="math inline">\(\mathbb{X}\)</span> is
+necessarily unbounded and does not possess any moments - even if all
+moments of <span class="math inline">\(\mathbb{A}\)</span> and <span class="math inline">\(\mathbb{B}\)</span> exist.</p>
+<p>Our approach relies on a detailed study of the asymptotic behavior of
+moments of free multiplicative convolution powers, which reveals a
+markedly different behavior from the classical setting. By employing
+subordination techniques for non-commutative random variables, we derive
+precise asymptotic of the tail of the distribution of <span class="math inline">\(\mathbb{X}\)</span> in
+the critical regime.</p>
+<p>This talk is based on joint work with Serban Belinschi and Kamil
+Szpojankowski.</p>
+<p><strong>Bibliography</strong></p>
+<p><span class="math inline">\([1]\)</span> S. Belinschi, B. Kołodziejek, K. Szpojankowski, <em>Free Perpetuities
+I: Existence, Subordination and Tail Asymptotics</em>, arXiv:2503.10319</p>
 </div>
 </div>
-<div id="supported-by" class="section level3 unnumbered hasAnchor">
-<h3>Supported by<a href="index.html#supported-by" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<p style="font-style: italic; font-size: 0.95em;">
-Project co-financed from the state budget by the Minister of Science of the Republic of Poland under the Excellent Science II Programme (Polska)<br>
-Projekt dofinansowany ze środków budżetu państwa, przyznanych przez Ministra Nauki w ramach Programu Doskonała nauka II
-</p>
-<p style="font-weight: bold; margin-top: 1em;">
-Honorary patronage of the Minister of Science and Higher Education
-</p>
-<p><br></p>
-<p><img src="01_znak_siatka_podstawowy_kolor_biale_tlo.png" alt="Ministry logo" style="max-height: 100px;"></p>
-</div>
-</div>
-<div id="organizing-and-scientific-committee" class="section level3 unnumbered hasAnchor">
-<h3>Organizing and Scientific Committee<a href="index.html#organizing-and-scientific-committee" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="scientific-committee" class="section level4 unnumbered hasAnchor">
-<h4>Scientific Committee<a href="index.html#scientific-committee" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><strong>Pablo Ferrari</strong> (Buenos Aires, Chair)<br />
-</li>
-<li><strong>Krzysztof Bogdan</strong> (Wrocław)<br />
-</li>
-<li><strong>Krzysztof Dębicki</strong> (Wrocław)<br />
-</li>
-<li><strong>Serguei Foss</strong> (Edinburgh)<br />
-</li>
-<li><strong>Nina Holden</strong> (New York)<br />
-</li>
-<li><strong>Hubert Lacoin</strong> (Rio de Janeiro)<br />
-</li>
-<li><strong>Eva Löcherbach</strong> (Paris)<br />
-</li>
-<li><strong>Sylvie Méléard</strong> (Palaiseau)<br />
-</li>
-<li><strong>Eulalia Nualart</strong> (Barcelona)<br />
-</li>
-<li><strong>Neil O’Connell</strong> (Dublin)<br />
-</li>
-<li><strong>Magda Peligrad</strong> (Cincinnati)<br />
-</li>
-<li><strong>Mark Podolskij</strong> (Luxembourg)<br />
-</li>
-<li><strong>Juan Carlos Pardo</strong> (Guanajuato)<br />
-</li>
-<li><strong>Daniel Remenik</strong> (Santiago)<br />
-</li>
-<li><strong>Makiko Sasada</strong> (Tokyo)<br />
-</li>
-<li><strong>Balint Toth</strong> (Bristol)</li>
-</ul>
-</div>
-<div id="local-organizing-committee" class="section level4 unnumbered hasAnchor">
-<h4>Local Organizing Committee<a href="index.html#local-organizing-committee" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><strong>Krzysztof Bogdan</strong> (Wrocław University of Science and Technology, Chair)<br />
-</li>
-<li><strong>Marek Arendarczyk</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Krzysztof Dębicki</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Piotr Dyszewski</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Tomasz Grzywny</strong> (Wrocław University of Science and Technology)<br />
-</li>
-<li><strong>Kamil Kaleta</strong> (Wrocław University of Science and Technology)<br />
-</li>
-<li><strong>Paweł Lorek</strong> (University of Wrocław)</li>
-</ul>
-<p>The book of abstracts was generated on 04 July 2025 at 16:17 CEST.</p>
+<div id="what-can-lévy-processes-tell-us-about-compact-quantum-groups" class="section level3 unnumbered hasAnchor">
+<h3>What can Lévy processes tell us about compact quantum groups?<a href="cs22-noncommutative-stochastic-processes-1.html#what-can-lévy-processes-tell-us-about-compact-quantum-groups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="uwe-franz-university-marie-louis-pasteur" class="section level4 unnumbered hasAnchor">
+<h4>Uwe Franz (University Marie &amp; Louis Pasteur)<a href="cs22-noncommutative-stochastic-processes-1.html#uwe-franz-university-marie-louis-pasteur" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Schürmann has defined Levy processes on involutive bialgebras, a
+generalization of the notion of Levy processes with values in groups or
+semigroups, to the setting of noncommutative stochastic processes. This
+talk will proviede an introduction to these processes. We will then
+apply this theory to compact quantum groups in the sense of Woronowicz,
+and discuss how Levy processes can provide geometric information, like a
+spectral dimension or a notion of connected component of the unit, on
+these quantum spaces.</p>
 
 </div>
 </div>
@@ -853,8 +845,8 @@ Honorary patronage of the Minister of Science and Higher Education
           </div>
         </div>
       </div>
-
-<a href="practical-information.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs21-stochastic-numerics-on-manifolds-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cs33-llms-and-ml-in-dynamic-risk-control..html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

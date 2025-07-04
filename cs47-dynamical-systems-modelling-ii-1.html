@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>SPA 2025</title>
-  <meta name="description" content="SPA 2025" />
+  <title>CS47: Dynamical Systems Modelling II | SPA 2025</title>
+  <meta name="description" content="CS47: Dynamical Systems Modelling II | SPA 2025" />
   <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="SPA 2025" />
+  <meta property="og:title" content="CS47: Dynamical Systems Modelling II | SPA 2025" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="SPA 2025" />
+  <meta name="twitter:title" content="CS47: Dynamical Systems Modelling II | SPA 2025" />
   
   
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="practical-information.html"/>
+<link rel="prev" href="cs44-stable-type-processes-1.html"/>
+<link rel="next" href="plenary-session-2.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -728,133 +728,136 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">SPA 2025</h1>
+<div id="cs47-dynamical-systems-modelling-ii-1" class="section level2 unnumbered hasAnchor">
+<h2>CS47: Dynamical Systems Modelling II<a href="cs47-dynamical-systems-modelling-ii-1.html#cs47-dynamical-systems-modelling-ii-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>date: 7/14/2025, time: 16:00-17:30, room: ICS 119</p>
+<p>Organizer: Anna Jaśkiewcz (Wroclaw University of Science and Technology)</p>
+<div id="quantitative-bounds-for-kernel-based-q-learning-in-continuous-spaces" class="section level3 unnumbered hasAnchor">
+<h3>Quantitative Bounds for Kernel based Q-learning in continuous spaces<a href="cs47-dynamical-systems-modelling-ii-1.html#quantitative-bounds-for-kernel-based-q-learning-in-continuous-spaces" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="athanasios-vasileiadis-karlsruhe-institute-of-technology-kit" class="section level4 unnumbered hasAnchor">
+<h4>Athanasios Vasileiadis (Karlsruhe Institute of Technology (KIT))<a href="cs47-dynamical-systems-modelling-ii-1.html#athanasios-vasileiadis-karlsruhe-institute-of-technology-kit" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In this talk, we are going to discuss a new proof of convergence with
+quantitative bounds for Q-learning in continuous spaces using kernel
+methods. We adapt the main structure from the original idea of Watkins,
+who first introduced the Action Replay Process (ARP) as a proof device.
+We give precise bounds for the transitions of ARP and the Markov
+Decision Process (MDP) that we want to learn.</p>
+<p>Suppose we are give an MDP
+<span class="math inline">\((\overline {S},\overline {A} ,\overline{\textsf{\sf P}} ,R,\gamma)\)</span>
+with <span class="math inline">\(\overline S\)</span> and <span class="math inline">\(\overline A\)</span> continuous compact spaces, and the
+transition kernel <span class="math inline">\(\overline{\textsf{\sf P}}\)</span> being nondegenerate and
+spread all over the space and the reward <span class="math inline">\(R\)</span> bound and smooth as a
+function of state and action. The value of a state <span class="math inline">\(s\)</span> is
+<span class="math display">\[V^\pi(s) :=  \mathbb{E}\Bigl[\sum_{k=0}^\infty \gamma^k R\bigl(\mathrm{s}_k,\pi(\mathrm{s}_k)\bigr) \bigm\vert \mathrm{s}_0=s \Bigr],\]</span>
+An the optimal action value function
+<span class="math display">\[Q^\star(s,a) = R(s,a) + \gamma \int_{\overline{S}} V^\star(s&#39;) \overline{\textsf{\sf P}} \bigl( (s,a),ds&#39; \bigr), \quad \forall (s,a) \in \overline{S} \times \overline{A}.\]</span></p>
+<p>Our goal is to learn <span class="math inline">\(Q^\star\)</span> using kernels. To explain the idea
+further, say that we interact with the (unknown) environment and obtain
+a sample
+<span class="math inline">\((\underline{\mathrm{s}},\underline{\mathrm a})_n= \{\mathrm{s}_0,\mathrm{a}_0,\mathrm{s}_1, ..., \mathrm{s}_n,\mathrm{a}_n\}\)</span>
+of size <span class="math inline">\(n\)</span>, we want to define
+<span class="math inline">\({K} : {\mathbb R}^{d_{S}} \times {\mathbb R}^{d_{A}} \rightarrow {\mathbb R}\)</span>
+a smooth non-negative compactly supported function such that based on
+our sample <span class="math inline">\((\underline{\mathrm s},\underline{\mathrm a})_n\)</span> and for any
+function <span class="math inline">\(f: \overline{S}\times \overline{A} \to \mathbb R\)</span> at a point
+<span class="math inline">\((s,a)\)</span> at depth <span class="math inline">\(n\)</span> we can define the operation
+<span class="math display">\[%\label{eq:kernel operator}
+\mathcal{A}_{h,n}f(s,a):=\sum_{k=0}^n  
+\displaystyle \frac{{K}_h\bigl(s-\mathrm{s}_k,a-\mathrm{a}_k\bigr)f(\mathrm{s}_k,\mathrm{a}_k)
+}{\sum_{k=0}^n
+{K}_h \bigl( s-\mathrm{s}_k,a-\mathrm{a}_k\bigr) },\]</span></p>
+<p>To apply the kernel approximation on the action value function we notice
+the recursion of the TD-update and let for <span class="math inline">\(n \geq 1\)</span>
+<span class="math display">\[%\label{eq:recKernelQ:intro}
+\widehat{Q}_{h,n}(s,a)=  \widehat{Q}_{h,n-1}(s,a) + \mathit{a}_{h,n-1}(s,a) \Bigl( R(\mathrm{s}_{n-1},{\mathrm a}_{n-1})+ \gamma {\sup}_{a&#39; \in A} \hat Q_{h,n-1}(\mathrm{s}_{n},a&#39;)
+  - \hat{Q}_{h,n-1}(s,a)\Bigr).\]</span> with
+<span class="math display">\[%\label{eq:upalpha:sec:carden:le:2:intro}
+\mathit{a}_{h,n}(s,a)=
+\left\{
+\begin{array}{ll}
+\displaystyle \frac{{K}_h\bigl(s-\mathrm{s}_n,a-\mathrm{a}_n\bigr)}{\sum_{j=0}^n
+{K}_h \bigl( s-\mathrm{s}_j,a-\mathrm{a}_j\bigr) }
+\quad &amp;\text{if} \quad
+\displaystyle
+\sum_{j=0}^n
+{K}_h \bigl( s-\mathrm{s}_j,a-\mathrm{a}_j\bigr) &gt;0
+\\
+0 &amp;\text{otherwise}
+\end{array}
+\right..\]</span></p>
+<p>Our main result is the rate of convergence, <span class="math inline">\(\widehat{Q}_{h,n}(s,a)\)</span> to
+<span class="math inline">\(Q^\star(s,a)\)</span> in probability when <span class="math inline">\(n\)</span> becomes large and <span class="math inline">\(h\)</span> small, for
+all <span class="math inline">\(s, a\)</span> in <span class="math inline">\(\overline S \times \overline A\)</span></p>
+<p><strong>Theorem</strong><br />
+<em>There exists a constant <span class="math inline">\(C\)</span>, depending on the various parameters
+underpinning our assumptions, such that, for an error threshold
+<span class="math inline">\(\epsilon&gt;0\)</span>, we can find <span class="math inline">\(h_{\varepsilon}\)</span> and <span class="math inline">\(n_{\varepsilon}\)</span> such
+that the </em>sup* distance between
+<span class="math inline">\(\widehat{Q}_{h_\varepsilon,n_\varepsilon}\)</span> and <span class="math inline">\(Q^\star\)</span> is less than
+<span class="math inline">\(C (1+\vert \ln(\varepsilon)\vert) \varepsilon\)</span> on an event of
+probability greater than <span class="math inline">\(1-C \varepsilon^D\)</span>. The number
+<span class="math inline">\(n_{\varepsilon}\)</span> that is necessary to do so is less than
+<span class="math inline">\(\exp(C \vert \ln(\varepsilon) \vert^3)\)</span>.*</p>
 </div>
-<div id="th-conference-on-stochastic-processes-and-their-applications-14-18-july-2025" class="section level1 unnumbered hasAnchor">
-<h1>44th Conference on Stochastic Processes and their Applications 14-18 July 2025<a href="index.html#th-conference-on-stochastic-processes-and-their-applications-14-18-july-2025" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="Logo%20SPA_Easy-Resize_com_crop.jpg" width="60%" style="display: block; margin: auto;" /></p>
-<div id="organizers" class="section level3 unnumbered hasAnchor">
-<h3>Organizers<a href="index.html#organizers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 2em; margin-bottom: 1em;">
-<div style="flex: 1; text-align: center; padding: 1em;">
-<img src="pwr.png" alt="WUST logo" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Rector of Wrocław University of Science and Technology, Arkadiusz Wójs, is the patron of the conference.
-</p>
 </div>
-<div style="flex: 1; text-align: center; padding: 1em;">
-<img src="uwr.png" alt="UWr logo" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Rector of the University of Wrocław, Robert Olkiewicz, is the patron of the conference.
-</p>
-</div>
-</div>
-</div>
-<div id="partners" class="section level3 unnumbered hasAnchor">
-<h3>Partners<a href="index.html#partners" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<img src="bernoulli_logo.png" alt="Bernoulli Society" style="max-height: 100px;"><br>
-<p style="font-size: 0.9em; margin-top: 1em;">
-Bernoulli Society for Mathematical Statistics and Probability
-</p>
+<div id="a-principle-of-one-big-jump-for-the-branching-random-walk" class="section level3 unnumbered hasAnchor">
+<h3>A principle of one big jump for the branching random walk<a href="cs47-dynamical-systems-modelling-ii-1.html#a-principle-of-one-big-jump-for-the-branching-random-walk" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="jakob-stonner-jlu-gießen" class="section level4 unnumbered hasAnchor">
+<h4>Jakob Stonner (JLU Gießen)<a href="cs47-dynamical-systems-modelling-ii-1.html#jakob-stonner-jlu-gießen" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We prove a version of Nagaev’s theorem for the branching random walk
+with heavy-tailed associated random walk. For a heavy-tailed random walk
+<span class="math inline">\((S_n)_{n \in \mathbb{N}}\)</span> on <span class="math inline">\(\mathbb{R}\)</span>, this theorem roughly states
+that
+<span class="math inline">\(\mathbb{P}(S_n &gt; n\mathbb{E}[S_1] + t) = n \mathbb{P}(S_1 &gt; t)(1 + o(1))\)</span>
+as <span class="math inline">\(n \to \infty\)</span> uniformly in large <span class="math inline">\(t &gt; 0\)</span>, which is explained
+probabilistically by the principle of one big jump. For a branching
+random walk on <span class="math inline">\(\mathbb{R}\)</span> we consider the random measure
+<span class="math inline">\(\widehat{Z}_n = \sum_{|u|=n} \mathrm{e}^{-V_u} \delta_{V_u}\)</span>, where
+<span class="math inline">\(n \in \mathbb{N}\)</span> and <span class="math inline">\((V_u)_{|u|=n}\)</span> denote the positions of the
+particles in the <span class="math inline">\(n\)</span>-th generation. Our result then states that
+<span class="math inline">\(\widehat{Z}_n([n\mathbb{E}[S_1] + t_n, \infty)) = W n \mathbb{P}(S_1 &gt; t_n)(1 + o(1))\)</span>
+in probability as <span class="math inline">\(n \to \infty\)</span>, where <span class="math inline">\(W\)</span> is a non-degenerate random
+variable, <span class="math inline">\(t_n \uparrow \infty\)</span> grows fast enough, and
+<span class="math inline">\((S_n)_{n \in \mathbb{N}}\)</span> is the associated random walk.</p>
 </div>
 </div>
-<div id="patronage" class="section level3 unnumbered hasAnchor">
-<h3>Patronage<a href="index.html#patronage" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<img src="Patronat_Prezydent%20WRO.png" alt="Wrocław logo" style="max-height: 80px;"><br>
-<p style="font-size: 0.9em; margin-top: 0.5em;">
-Honorary Patronage of the Mayor of Wrocław
-</p>
-<p><br><br></p>
-<img src="01_znak_siatka_podstawowy_kolor_biale_tlo(1).png" alt="Ministry logo" style="max-height: 80px;"><br>
-<p style="font-size: 0.9em; margin-top: 0.5em;">
-Minister of Science and Higher Education, Republic of Poland
-</p>
-</div>
-</div>
-<div id="supported-by" class="section level3 unnumbered hasAnchor">
-<h3>Supported by<a href="index.html#supported-by" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-<p style="font-style: italic; font-size: 0.95em;">
-Project co-financed from the state budget by the Minister of Science of the Republic of Poland under the Excellent Science II Programme (Polska)<br>
-Projekt dofinansowany ze środków budżetu państwa, przyznanych przez Ministra Nauki w ramach Programu Doskonała nauka II
-</p>
-<p style="font-weight: bold; margin-top: 1em;">
-Honorary patronage of the Minister of Science and Higher Education
-</p>
-<p><br></p>
-<p><img src="01_znak_siatka_podstawowy_kolor_biale_tlo.png" alt="Ministry logo" style="max-height: 100px;"></p>
-</div>
-</div>
-<div id="organizing-and-scientific-committee" class="section level3 unnumbered hasAnchor">
-<h3>Organizing and Scientific Committee<a href="index.html#organizing-and-scientific-committee" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="scientific-committee" class="section level4 unnumbered hasAnchor">
-<h4>Scientific Committee<a href="index.html#scientific-committee" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><strong>Pablo Ferrari</strong> (Buenos Aires, Chair)<br />
-</li>
-<li><strong>Krzysztof Bogdan</strong> (Wrocław)<br />
-</li>
-<li><strong>Krzysztof Dębicki</strong> (Wrocław)<br />
-</li>
-<li><strong>Serguei Foss</strong> (Edinburgh)<br />
-</li>
-<li><strong>Nina Holden</strong> (New York)<br />
-</li>
-<li><strong>Hubert Lacoin</strong> (Rio de Janeiro)<br />
-</li>
-<li><strong>Eva Löcherbach</strong> (Paris)<br />
-</li>
-<li><strong>Sylvie Méléard</strong> (Palaiseau)<br />
-</li>
-<li><strong>Eulalia Nualart</strong> (Barcelona)<br />
-</li>
-<li><strong>Neil O’Connell</strong> (Dublin)<br />
-</li>
-<li><strong>Magda Peligrad</strong> (Cincinnati)<br />
-</li>
-<li><strong>Mark Podolskij</strong> (Luxembourg)<br />
-</li>
-<li><strong>Juan Carlos Pardo</strong> (Guanajuato)<br />
-</li>
-<li><strong>Daniel Remenik</strong> (Santiago)<br />
-</li>
-<li><strong>Makiko Sasada</strong> (Tokyo)<br />
-</li>
-<li><strong>Balint Toth</strong> (Bristol)</li>
-</ul>
-</div>
-<div id="local-organizing-committee" class="section level4 unnumbered hasAnchor">
-<h4>Local Organizing Committee<a href="index.html#local-organizing-committee" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li><strong>Krzysztof Bogdan</strong> (Wrocław University of Science and Technology, Chair)<br />
-</li>
-<li><strong>Marek Arendarczyk</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Krzysztof Dębicki</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Piotr Dyszewski</strong> (University of Wrocław)<br />
-</li>
-<li><strong>Tomasz Grzywny</strong> (Wrocław University of Science and Technology)<br />
-</li>
-<li><strong>Kamil Kaleta</strong> (Wrocław University of Science and Technology)<br />
-</li>
-<li><strong>Paweł Lorek</strong> (University of Wrocław)</li>
-</ul>
-<p>The book of abstracts was generated on 04 July 2025 at 16:17 CEST.</p>
+<div id="stochastic-dynamic-machine-scheduling-with-interruptible-set-up-times" class="section level3 unnumbered hasAnchor">
+<h3>Stochastic Dynamic Machine Scheduling with Interruptible Set-up Times<a href="cs47-dynamical-systems-modelling-ii-1.html#stochastic-dynamic-machine-scheduling-with-interruptible-set-up-times" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="dongnuan-tian-lancaster-university" class="section level4 unnumbered hasAnchor">
+<h4>Dongnuan Tian (Lancaster University)<a href="cs47-dynamical-systems-modelling-ii-1.html#dongnuan-tian-lancaster-university" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We consider a problem in which a machine is scheduled dynamically within
+a network to process jobs at different demand points. Costs are
+accumulated as jobs wait to be processed. The time needed for a machine
+to travel between two nodes in the network represents the “set-up time”
+needed to switch from processing one type of job to another. By using a
+network formulation, we can model complex relationships in switching
+times between different types of activity and also allow the switching
+times to be interrupted. The problem can be formulated as a Markov
+decision process in which arrival times, service times and switching
+times are uncertain and the objective is to minimize the expected
+long-run average cost. However exact solutions using dynamic programming
+are not possible due to the complexity of the state space. Heuristics
+for certain special cases of the problem have been proposed in the
+literature and in this talk we discuss how to adapt these heuristics to
+our problem. We also discuss how forward-thinking strategies can be used
+to develop improved heuristics and show the results obtained by applying
+these methods to networks of various different configurations.</p>
 
 </div>
 </div>
+</div>
+<!-- </div> -->
+
+
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="practical-information.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cs44-stable-type-processes-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="plenary-session-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
